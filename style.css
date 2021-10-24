@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Pacifico&family=Permanent+Marker&display=swap');
 
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     height: 100vh;
     width: 100vw;
@@ -74,14 +79,22 @@ h2{
 .align-self-start,
 .align-self-center,
 .align-self-end{
-    /* display: flex;
-    justify-content: space-around; */
     position: relative;
     top: 35px;
     border:2px solid #432818;
     border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     height: 25vh;
-    width: 40vw;         
+    width: 40vw;  
+           
+}
+.align-self-start:hover,
+.align-self-center:hover,
+.align-self-end:hover{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:  #432818;
+    border: 3px solid #432818;;
 }
 
 /******** SECTION PART 2 ********/
@@ -110,6 +123,15 @@ h2{
  .card:hover{
      border-color:#99582A
  }
+ .card-body{
+     padding: 0 2px;
+ }
+ .card-title{
+     color: #432818;
+ }
+ .card-text{
+     color: #6E4021;
+ }
 
 /******** SECTION PART 3 ********/
 #partThree{
@@ -129,3 +151,27 @@ h2{
      width: 400px;
      height: 600px;
  }
+ .d-block{
+    border-radius: 15px; 
+ }
+     
+ 
+ .carousel-caption>h5{
+     background: #99582A;
+     color: #000000;
+     font-weight: bold;
+     font-size: 1.5rem;
+     border: #432818 solid 2px;
+     border-radius: 10px;
+     padding: 2px;
+    
+     
+ }
+ .carousel-caption>p{
+     color: #99582A;
+     font-weight: bold;
+     font: size 1.2em; ;
+ }
+
+ /* ************************* */
+ 
