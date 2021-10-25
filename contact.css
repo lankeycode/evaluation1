@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Pacifico&family=Permanent+Marker&display=swap');
+
 html{
     padding: 0;
     margin: 0;
@@ -11,13 +13,51 @@ body{
 
 
 }
-img{
+/* ******* NAVABAR ****** */
+.navbar-fixed-top{
+    position: fixed!important;
+    width: 100vw!important;
+    z-index: 5000;
+}
+.navbar-custom,
+.dropdown-menu{
+    background-color: #99582A;
+    color: rgba(67,40,24,1);
+    
+}
+nav .navbar-nav  li  a{
+    color: #241106;
+}
+nav .navbar-nav  li  a:hover{
+    color: #572f18;
+}
+#navbarDropdown:focus{
+    color: #0f0702;
+
+}
+.dropdown-item:hover{
+    background-color: #5e341c;
+    color: #351c0e !important;
+
+}
+
+/* *******  END NAVBAR *********/
+
+h1{
+padding-top: 10vh;
+    padding-left: 5vw;
+    font-weight: bolder;
+    font-family: 'Permanent Marker', cursive;
+    color: #241106;
+}
+
+.logo{
     position: absolute;
     height: 20vh;
     width: 15vw;
 }
 form{
-    margin: 200px auto;
+    margin: 200px 10px 50px 10px;
     
 
 }
@@ -26,14 +66,44 @@ form{
     background: #72513f !important;
     border: #33241c solid 2px !important;
 }
+.browser-default{
+    background:#72513f !important ;
+    border: #33241c solid 2px !important;
+    
+}
 
 .btn{
     background-color: #72513f !important;
+    color: #241106 !important;
+}
+.btn:hover{
+    background-color: #33241c !important;
+    color: #774c35 !important;
 }
 .list-unstyled{
     padding-top: 3vh;
 }
+li>p{
+    color: #241106;
+}
+.fas,
+.fab{
+    color: #33241c;
+}
 .fab{
     margin: 20px;
     font-size: 2rem;
+    cursor: pointer;
+}
+.fa-facebook-f:hover{
+    color: #3B5998;
+}
+.fa-youtube:hover{
+    color: #FF0000;
+}
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+.fa-whatsapp:hover{
+    color: #25D366;
 }
