@@ -53,8 +53,8 @@ h1{
 
 .logo{
     position: absolute;
-    height: 20vh;
-    width: 15vw;
+    height: auto;
+    width: 14vw;
 }
 h2{
     position: absolute;
@@ -74,13 +74,13 @@ h2{
     transform: translateX(-50%);
 } */
 
-.btn{
+/* .btn{
     position: relative;
     top: 200px;
     color: #241106 !important;
     
 
-}
+} */
 
 .mainBtn:hover,
 .mainBtn1:hover,
@@ -95,16 +95,24 @@ h2{
 .mainBtn1,
 .mainBtn2,
 .mainBtn3{
-    width: 20vw;
+    width: 250px;
     background: rgba(67,40,24,1) !important;
     border-color: saddlebrown;
     border: 2px solid;
     color:brown;
     margin: 100px 20px;
+    position: relative;
+    top: 200px;
+    color: #241106 !important;
     
 
-
 }
+/* .mainBtn, .mainBtn1, .mainBtn2{
+    margin: 100px 20px;
+
+} */
+
+
 
 .mainBtn:active,
 .mainBtn2:active,
@@ -115,3 +123,23 @@ h2{
     outline: none ;
 
 }
+
+.modal{
+    z-index: 6000 !important;
+}
+
+
+/* *********RESPONSIVE******** */
+
+@media  screen and (max-width: 610px) {
+    body{
+        height: 130vh;    
+    }
+    .mainBtn3, .mainBtn2, .mainBtn1, .mainBtn{
+        margin: 50px; 
+    }
+
+}
+    
+
+

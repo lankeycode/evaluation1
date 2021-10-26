@@ -7,7 +7,7 @@ html{
 }
 
 body{
-    height: 150vh;
+    height: 100vh;
     background: linear-gradient(0deg, rgba(67,40,24,1) 0%, rgba(153,88,42,1) 100%);
     background-repeat: no-repeat;
 
@@ -53,8 +53,8 @@ padding-top: 10vh;
 
 .logo{
     position: absolute;
-    height: 20vh;
-    width: 15vw;
+    height: auto;
+    width: 14vw;
 }
 form{
     margin: 200px 10px 50px 10px;
@@ -71,7 +71,7 @@ form{
     border: #33241c solid 2px !important;
     
 }
-
+ 
 .btn{
     background-color: #72513f !important;
     color: #241106 !important;
@@ -106,4 +106,13 @@ li>p{
 }
 .fa-whatsapp:hover{
     color: #25D366;
+}
+
+/* *********RESPONSIVE******* */
+
+@media screen and (max-width: 751px){
+    body{
+        height: auto;
+    }
+    
 }

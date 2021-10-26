@@ -110,8 +110,8 @@ h2{
     border:2px solid #432818;
     border-radius: 20px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    height: 25vh;
-    width: 40vw;  
+    /* height: 25vh;
+    width: 40vw;   */
            
 }
 .align-self-start:hover,
@@ -223,5 +223,7 @@ h2{
      font: size 1.2em; ;
  }
 
- /* ************************* */
+ /* ***********RESPONSIVE************** */
+
+ 
  
