@@ -8,6 +8,7 @@ html{
 body{
     height: 100vh;
     width: 100vw;
+    background: center;
     background-image: url(./img/bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,6 +17,8 @@ body{
     
     
 }
+/* ******SCROLLBAR******* */
+
 /* ******* NAVABAR ****** */
 .navbar-fixed-top{
     position: fixed!important;
@@ -47,7 +50,7 @@ nav .navbar-nav  li  a:hover{
 /* *******  END NAVBAR *********/
 .logo{
     width: 20vw;
-    height: 30vh;
+    height: auto;
 }
 
 h1{
@@ -67,9 +70,11 @@ h2{
     text-align: center;
     margin: 0  auto;
     border: solid 4px #432818;
-    border-radius: 20px;
+    border-radius: 18px;
     width: 30vw;
     color: #432818;
+    padding: auto;
+    
     
     
 
@@ -78,14 +83,14 @@ h2{
 #partOne,
 #partTwo,
 #partThree{
-    height:40vh ;
     width: 100vw;
+    
     
 }
 
 /******** SECTION PART 1 ********/
 #partOne{
-    margin-top: 45vh;
+    margin-top: 40vh;
     height: 100vh;
     /* background-color: #99582A;    */
     background: linear-gradient(0deg, rgba(67,40,24,1) 0%, #99582a 100%);
@@ -95,16 +100,21 @@ h2{
     position: relative;
     top: 35px;
     height: 85vh;
-    width: 100%;
+    width: 95%;
+    margin:auto 30px auto 10px;
     display: flex;
     padding: 15px;
     justify-content: space-around;
     
     
 }
-.align-self-start,
+.colPartOne1,
+.colPartOne2,
+.colPartOne3{
+
+/* .align-self-start,
 .align-self-center,
-.align-self-end{
+.align-self-end{ */
     position: relative;
     top: 35px;
     border:2px solid #432818;
@@ -114,25 +124,44 @@ h2{
     width: 40vw;   */
            
 }
-.align-self-start:hover,
+.colPartOne1{
+/* .align-self-start{ */
+    margin-top: 10vh;
+}
+.colPartOne2,
+.colPartOne3{
+/* .align-self-center,
+.align-self-end{ */
+    margin-top: 5vh;
+}
+.colPartOne3{
+/* .align-self-end{ */
+    margin-left: 2vh;
+}
+.colPartOne1:hover,
+.colPartOne2:hover,
+.colPartOne3:hover{
+/* .align-self-start:hover,
 .align-self-center:hover,
-.align-self-end:hover{
+.align-self-end:hover{ */
     font-size: 1.1rem;
     font-weight: bold;
     border: 3px solid;
     
 }
-.align-self-start:hover{
+.colPartOne1:hover{
+/* .align-self-start:hover{ */
     color:  #432818;
     border-color:  #432818;
 
 }
-
-.align-self-center:hover{
+.colPartOne2:hover{
+/* .align-self-center:hover{ */
     color: #351c0e;
     border-color: #351c0e;
 }
-.align-self-end:hover{
+.colPartOne3:hover{
+/* .align-self-end:hover{ */
     color:#140a03 ;
     border-color: #140a03;
 }
@@ -140,7 +169,7 @@ h2{
 /******** SECTION PART 2 ********/
 
  #partTwo{
-    height: 200vh;
+    height: 220vh;
     /* background-color: #844C26; */
     background: linear-gradient(0deg, rgb(132, 76, 38) 0%, rgba(67,40,24,1) 100%);
     
@@ -149,22 +178,36 @@ h2{
  .title2{
      color: #99582A;
      border: #99582A solid 4px;
+     
+     
  }
  .part2{
+     width: 100vw;
+     height: auto;
      position: relative;
      top: 75px;
+     
+     /* margin-left: 5vw; */
+     align-self: center;
  }
+ 
  .card-img-top{
-     height: 400px; ;
+     height: auto;
+     /* height: 400px;  */
           
  }
  .card{
-     height: 500px;
-     width: 350px;
+     position: relative;
+     height: auto;
+     margin: 0 auto;
+     /* height: 500px; */
+     /* width: 350px; */
+     width: 60%;
      border: 3px solid #432818;
      
      
  }
+
 
  .card:hover{
      /* border-color:#99582A; */
@@ -182,24 +225,29 @@ h2{
  .card-text{
      color: #6E4021;
  }
+ 
 
 /******** SECTION PART 3 ********/
 #partThree{
-    height: 100vh;
+    height: auto;
+    
     /* background-color: rgb(110, 64, 33); */
     background: linear-gradient(0deg,  rgba(110,64,33) 0% , rgb(132,76,38)100%);
 }
+
 /* CAROUSEL */
 
  .carousel{
-     margin: 100px auto 0 auto;
-     width: 500px;
-     height: 600px;
+     margin: 15vh auto 0 auto;
+     width: 45vw;
+     /* width: 500px; */
+     height: auto;
+     /* height: 600px; */
      
  }
  .carousel-item>img{
-     width: 400px;
-     height: 600px;
+     width: 350px;
+     height: auto;
  }
  .d-block{
     border-radius: 15px; 
@@ -225,5 +273,150 @@ h2{
 
  /* ***********RESPONSIVE************** */
 
+ /* Section 1 */
+ @media  screen and (min-width:1320px) {
+    
+     
+ }
+ @media screen and (max-width:1295px) and (min-width:750px){
+     .colPartOne1, .colPartOne1, .colPartOne3{
+         margin: 2vw;
+     }
+
+ }
+ @media  screen and (max-width:1140px) {
+    
+    }   
+     
+
+@media  screen and (max-width:960px) {
+    
+     
+}
+@media  screen and (max-width:720px) {
+     
+}
+@media screen and (max-width:655px) {
+    h2{
+        font: size 1.1; ;
+    }
+    
+}
+@media  screen and (max-width:540px) {
+    h2{
+        font-size: 0.9rem;
+    }   
+    
+}
+@media  screen and (max-width:375px) {
+    h2{
+        font-size: 0.7rem;
+    }   
+     
+}
+
+
+ /* Section 2 */
+ @media  screen and (max-width:1320px) {
+     
+}
+@media  screen and (max-width:1140px) {
+    
+}
+@media  screen and (max-width:960px) {
+    
+}
+@media  screen and (max-width:720px) {
+    .part2{
+        
+        margin-left: 10%;
+    }  
+}
+@media  screen and (max-width:540px) {
+    
+}
  
  
+ /* Section 3 */
+ @media  screen and (min-width:930px) {
+    .carousel{
+        margin: 17vh auto 0 auto;
+        width: 30vw;
+        height: auto;
+    }
+    #partThree{
+        height: 120vh;
+    }
+     
+}
+ /* @media  screen and (min-width:1440px) {
+    .carousel{
+        margin: 17vh auto 0 auto;
+        width: 50vw;
+        height: auto;
+    }
+    #partThree{
+        height: 110vh;
+    }
+     
+}
+
+ @media  screen and (max-width:1320px) {
+    .carousel{
+        margin: 17vh auto 0 auto;
+        width: 55vw;
+        height: auto;
+    }
+    #partThree{
+        height: 210vh;
+    }
+     
+}
+
+@media  screen and (max-width:1024px) {
+    .carousel{
+        margin: 17vh auto 0 auto;
+        width: 55vw;
+        height: auto;
+    }
+    #partThree{
+        height: 120vh;
+    }
+    
+}
+
+@media  screen  and (max-width:767px) {
+    .carousel{
+        margin: 15vh auto 0 auto;
+        width: 60vw;
+        height: auto;
+    }
+    #partThree{
+        height: 75vh;
+    }
+    
+}
+@media  screen and (min-width:375px) and (max-width:424px) {
+    .carousel{
+        margin: 15vh auto 0 auto;
+        width: 60vw;
+        height: auto;
+    }
+    #partThree{
+        height: 75vh;
+    }
+    
+     
+}
+@media screen and (max-width:374px) {
+    .carousel{
+        margin: 15vh auto 0 auto;
+        width: 60vw;
+        height: auto;
+    }
+    #partThree{
+        height: 70vh;
+    }
+
+    
+} */
