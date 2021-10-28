@@ -10,6 +10,7 @@ body{
     height: 100vh;
     background: linear-gradient(0deg, rgba(67,40,24,1) 0%, rgba(153,88,42,1) 100%);
     background-repeat: no-repeat;
+    overflow-x: hidden;
 
 
 }
