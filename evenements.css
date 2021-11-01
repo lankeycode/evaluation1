@@ -53,75 +53,53 @@ h1{
     }
 
 .logo{
-    position: absolute;
-    height: auto;
+    
     width: 14vw;
 }
 h2{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
+    
+    text-align: center;
+    padding-top: 5vh;
     font-family: 'Permanent Marker', cursive;
     color: #241106;
-    
-    
+     
     
 }
-/* .contenair{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-} */
+.contenair{
+    padding-top: 5vh;
+    width: 100vw;
 
-/* .btn{
-    position: relative;
-    top: 200px;
-    color: #241106 !important;
-    
-
-} */
-
-.mainBtn:hover,
-.mainBtn1:hover,
-.mainBtn2:hover,
-.mainBtn3:hover{
-    box-shadow: none;
-    background: #582f0e !important;
-    color: chocolate !important;
-    transition: .5s;
 }
+.row{
+    width: 100vw;
+    justify-content: center;
+    
+}
+.col{
+    width: 85%;
+    
+}
+
 .mainBtn,
 .mainBtn1,
 .mainBtn2,
 .mainBtn3{
-    width: 250px;
+    width: 240px;
     background: rgba(67,40,24,1) !important;
-    border-color: saddlebrown;
-    border: 2px solid;
-    color:brown;
-    margin: 100px 20px;
-    position: relative;
-    top: 200px;
-    color: #241106 !important;
+    color: #241106 !important;  
+    margin: 5%;
     
 
 }
-/* .mainBtn, .mainBtn1, .mainBtn2{
-    margin: 100px 20px;
 
-} */
-
-
-
-.mainBtn:active,
-.mainBtn2:active,
-.mainBtn1:active,
-.mainBtn3:active{
-    border-color: none ;
-    box-shadow: none ;
-    outline: none ;
+.mainBtn:focus,
+.mainBtn2:focus,
+.mainBtn1:focus,
+.mainBtn3:focus{
+    /* border-color: none !important ; */
+    box-shadow: none !important ;
+    /* outline: none !important  ; */
+    box-shadow: #351c0e 3px 4px 2px !important;
 
 }
 
@@ -132,15 +110,31 @@ h2{
 
 /* *********RESPONSIVE******** */
 
-@media  screen and (max-width: 610px) {
-    body{
-        height: 130vh;    
-    }
-    .mainBtn3, .mainBtn2, .mainBtn1, .mainBtn{
-        margin: 50px; 
-    }
-
-}
+@media screen and (min-width:584px) and (max-width:1075px) {
+    .mainBtn,
+    .mainBtn1,
+    .mainBtn2,
+    .mainBtn3{
     
+    margin: 10%;
+    
+}
+        
+}
+@media screen and (min-width:1076px){
+    
+    .mainBtn:hover,
+    .mainBtn1:hover,
+    .mainBtn2:hover,
+    .mainBtn3:hover{
+    background: #582f0e !important;
+    color: chocolate !important;
+    transition: .5s;
+}
+}
+
+
+
+
 
 

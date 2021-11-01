@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Pacifico&family=Permanent+Marker&display=swap');
 
 html{
+    
+    background-color: #99582a;
+}
+body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-body{
     height: 100vh;
-    width: 100vw;
-    background: center;
-    background-image: url(./img/bg1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow-x: hidden;
     scroll-behavior:smooth;
     overflow-x: hidden;
@@ -64,8 +61,14 @@ nav .navbar-nav  li  a:hover{
 /* *******  END NAVBAR *********/
 
 /* Section PART */
-.part{
+#part{
     height: 100vh;
+    width: 100vw;
+    background: center;
+    background-image: url(./img/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #43281860;
 }
 .logo{
     width: 20vw;
@@ -83,19 +86,17 @@ h1{
 }
 
 h2{
-    position: relative;
-    top: 70px;
+    
+    /* top: 10vh; */
+    /* font-size: 1.2rem; */
     font-family: 'Permanent Marker', cursive;
     text-align: center;
     margin: 0  auto;
     border: solid 4px #432818;
-    border-radius: 18px;
-    width: 30vw;
+    border-radius: 14px;
+    width: 60%;
     color: #432818;
-    padding: auto;
-    
-    
-    
+      
 
 }
 
@@ -103,339 +104,209 @@ h2{
 #partTwo,
 #partThree{
     width: 100vw;
+    padding-top: 14vh;
     
     
 }
 
 /******** SECTION PART 1 ********/
 #partOne{
-    margin-top: 40vh;
-    height: 100vh;
-    /* background-color: #99582A;    */
-    background: linear-gradient(0deg, rgba(67,40,24,1) 0%, #99582a 100%);
-}
-    
-.row{
-    position: relative;
-    top: 35px;
-    height: 85vh;
-    width: 95%;
-    margin:auto 30px auto 10px;
-    display: flex;
-    padding: 15px;
-    justify-content: space-around;
-    
-    
+    background: linear-gradient(0deg, rgba(67,40,24,1) 0%, #844C26 100%);
 }
 .colPartOne1,
 .colPartOne2,
 .colPartOne3{
-
-/* .align-self-start,
-.align-self-center,
-.align-self-end{ */
-    position: relative;
-    top: 35px;
+    width: 80%;
+    margin: 3vw auto;
     border:2px solid #432818;
     border-radius: 20px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    /* height: 25vh;
-    width: 40vw;   */
-           
 }
 .colPartOne1{
-/* .align-self-start{ */
-    margin-top: 10vh;
-}
-.colPartOne2,
-.colPartOne3{
-/* .align-self-center,
-.align-self-end{ */
-    margin-top: 5vh;
-}
-.colPartOne3{
-/* .align-self-end{ */
-    margin-left: 2vh;
-}
-.colPartOne1:hover,
-.colPartOne2:hover,
-.colPartOne3:hover{
-/* .align-self-start:hover,
-.align-self-center:hover,
-.align-self-end:hover{ */
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: 3px solid;
-    
-}
-.colPartOne1:hover{
-/* .align-self-start:hover{ */
+
     color:  #432818;
     border-color:  #432818;
 
 }
-.colPartOne2:hover{
-/* .align-self-center:hover{ */
+.colPartOne2{
+
     color: #351c0e;
     border-color: #351c0e;
 }
-.colPartOne3:hover{
-/* .align-self-end:hover{ */
+.colPartOne3{
+
     color:#140a03 ;
     border-color: #140a03;
-}
+} 
+
+
 
 /******** SECTION PART 2 ********/
 
- #partTwo{
-    height: 220vh;
-    /* background-color: #844C26; */
+#partTwo{
     background: linear-gradient(0deg, rgb(132, 76, 38) 0%, rgba(67,40,24,1) 100%);
+}
+
+.part2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 80%;
+    margin-top: 10vh;
+    margin:auto ;
+}
+.col{
+    flex: 1;
+    min-width: 55%;
+    margin: 2vh ;
     
+    
+}
+.title2{
+    color: #99582A;
+    border: #99582A solid 4px;
+}
 
- }
- .title2{
-     color: #99582A;
-     border: #99582A solid 4px;
-     
-     
- }
- .part2{
-     width: 100vw;
-     height: auto;
-     position: relative;
-     top: 75px;
-     
-     /* margin-left: 5vw; */
-     align-self: center;
- }
+.card{
+    border: 3px solid #432818;
+    border-radius: 10px;
+}
+.card-body{
+    background-color: #43281860;
+
+}
+.card-title{
+    color: #351706;
+}
+.card-text{
+    color: #6E4021;
+}
  
- .card-img-top{
-     height: auto;
-     /* height: 400px;  */
-          
- }
- .card{
-     position: relative;
-     height: auto;
-     margin: 0 auto;
-     /* height: 500px; */
-     /* width: 350px; */
-     width: 60%;
-     border: 3px solid #432818;
-     
-     
- }
-
-
- .card:hover{
-     /* border-color:#99582A; */
-     border: 4px solid #99582A;
-     
-     
-     
- }
- .card-body{
-     padding: 0 2px;
- }
- .card-title{
-     color: #432818;
- }
- .card-text{
-     color: #6E4021;
- }
  
 
 /******** SECTION PART 3 ********/
-#partThree{
-    height: auto;
-    
-    /* background-color: rgb(110, 64, 33); */
+ #partThree{
+   
     background: linear-gradient(0deg,  rgba(110,64,33) 0% , rgb(132,76,38)100%);
+    
 }
 
 /* CAROUSEL */
 
- .carousel{
-     margin: 15vh auto 0 auto;
-     width: 45vw;
-     /* width: 500px; */
-     height: auto;
-     /* height: 600px; */
-     
- }
- .carousel-item>img{
-     width: 350px;
-     height: auto;
- }
- .d-block{
-    border-radius: 15px; 
- }
-     
- 
- .carousel-caption>h5{
-     background: #99582A;
-     color: #000000;
-     font-weight: bold;
-     font-size: 1.5rem;
-     border: #432818 solid 2px;
-     border-radius: 10px;
-     padding: 2px;
+.carousel{
+    width: 85%;
+    margin: auto;
+    margin-top: 5vh;
+    border: 4px solid #432818;
+    border-radius: 10px;
     
-     
- }
- .carousel-caption>p{
-     color: #99582A;
-     font-weight: bold;
-     font: size 1.2em; ;
- }
+    
+}
+.carousel-caption>h5{
+    background: #99582A;
+    color: #000000;
+    font-weight: bold;
+    /* font-size: 1.5rem; */
+    border: #432818 solid 2px;
+    border-radius: 10px;
+    padding: 2px;
+}
+.carousel-caption>p{
+    color: #200f05;
+    font-weight: bold;
+    background-color: #412412e1;
+    border-radius: 15px;
+    
+}
+   
 
  /* ***********RESPONSIVE************** */
 
  /* Section 1 */
- @media  screen and (min-width:1320px) {
+
+ @media  screen and (min-width:1296px) {
+     
+         .part1{
+             width: 90%;
+             margin: auto;
+         }
+         .colPartOne1, .colPartOne2, .colPartOne3{
+            margin: 2vw;
+        }
+
+     }
     
      
- }
  @media screen and (max-width:1295px) and (min-width:750px){
-     .colPartOne1, .colPartOne1, .colPartOne3{
+     .part1{
+         width: 90%;
+         margin: auto;
+     }
+     .colPartOne1, .colPartOne2, .colPartOne3{
          margin: 2vw;
+         color:#2e1405 ;
      }
 
+
  }
- @media  screen and (max-width:1140px) {
-    
-    }   
-     
-
-@media  screen and (max-width:960px) {
-    
-     
-}
-@media  screen and (max-width:720px) {
-     
-}
-@media screen and (max-width:655px) {
-    h2{
-        font: size 1.1; ;
+ @media screen and (min-width:1024px) {
+    .colPartOne1:hover,
+    .colPartOne2:hover,
+    .colPartOne3:hover{
+        border: #241106 solid 3px;
+   
+ }
+    .colPartOne1,.colPartOne2,.colPartOne3{
+        color: #2e1405;
+        font-weight: bold;
     }
-    
 }
-@media  screen and (max-width:540px) {
-    h2{
-        font-size: 0.9rem;
-    }   
-    
-}
-@media  screen and (max-width:375px) {
-    h2{
-        font-size: 0.7rem;
-    }   
-     
-}
-
 
  /* Section 2 */
- @media  screen and (max-width:1320px) {
-     
-}
-@media  screen and (max-width:1140px) {
-    
-}
-@media  screen and (max-width:960px) {
-    
-}
-@media  screen and (max-width:720px) {
+
+   @media screen and (min-width:1296px) {
     .part2{
-        
-        margin-left: 10%;
+        display: flex;
+        flex-wrap: wrap;
     }  
-}
-@media  screen and (max-width:540px) {
-    
-}
+   .col{
+       flex: 1;
+          min-width:18%;
+          
+      }
+      .card:hover{
+        animation:wobble-hor-bottom .8s both
+      }
+      @keyframes wobble-hor-bottom{0%,100%{transform:translateX(0);transform-origin:50% 50%}15%{transform:translateX(-30px) rotate(-6deg)}30%{transform:translateX(15px) rotate(6deg)}45%{transform:translateX(-15px) rotate(-3.6deg)}60%{transform:translateX(9px) rotate(2.4deg)}75%{transform:translateX(-6px) rotate(-1.2deg)}} 
+   }
+   @media screen and (max-width:1295px) and (min-width:750px){
+     .part2{
+         display: flex;
+         flex-wrap: wrap;
+         width: 75%;
+     }  
+    .col{
+        flex: 1;
+           min-width:45%;
+           
+       }
+   }
+
+
+   /* Section 3 */
  
- 
- /* Section 3 */
- @media  screen and (min-width:930px) {
-    .carousel{
-        margin: 17vh auto 0 auto;
-        width: 30vw;
-        height: auto;
-    }
-    #partThree{
-        height: 120vh;
-    }
-     
-}
- /* @media  screen and (min-width:1440px) {
-    .carousel{
-        margin: 17vh auto 0 auto;
-        width: 50vw;
-        height: auto;
-    }
-    #partThree{
-        height: 110vh;
-    }
-     
-}
+   @media  screen and (min-width:1296px){
+       .carousel{
+           width: 25%;
+       }
 
- @media  screen and (max-width:1320px) {
-    .carousel{
-        margin: 17vh auto 0 auto;
-        width: 55vw;
-        height: auto;
-    }
-    #partThree{
-        height: 210vh;
-    }
-     
-}
+   }  
 
-@media  screen and (max-width:1024px) {
-    .carousel{
-        margin: 17vh auto 0 auto;
-        width: 55vw;
-        height: auto;
-    }
-    #partThree{
-        height: 120vh;
-    }
-    
-}
+   @media screen and (max-width:1295px) and (min-width:750px){
+       .carousel{
+           width:35%
+       }
+   }
 
-@media  screen  and (max-width:767px) {
-    .carousel{
-        margin: 15vh auto 0 auto;
-        width: 60vw;
-        height: auto;
-    }
-    #partThree{
-        height: 75vh;
-    }
-    
-}
-@media  screen and (min-width:375px) and (max-width:424px) {
-    .carousel{
-        margin: 15vh auto 0 auto;
-        width: 60vw;
-        height: auto;
-    }
-    #partThree{
-        height: 75vh;
-    }
-    
-     
-}
-@media screen and (max-width:374px) {
-    .carousel{
-        margin: 15vh auto 0 auto;
-        width: 60vw;
-        height: auto;
-    }
-    #partThree{
-        height: 70vh;
-    }
 
-    
-} */
+
