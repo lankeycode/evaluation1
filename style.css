@@ -76,6 +76,7 @@ nav .navbar-nav  li  a:hover{
 }
 
 h1{
+    margin: 0 2vw;
     padding-top: 17vh;
     padding-left: 5vw;
     font-weight: bolder;
@@ -87,8 +88,7 @@ h1{
 
 h2{
     
-    /* top: 10vh; */
-    /* font-size: 1.2rem; */
+    
     font-family: 'Permanent Marker', cursive;
     text-align: center;
     margin: 0  auto;
@@ -138,6 +138,15 @@ h2{
     color:#140a03 ;
     border-color: #140a03;
 } 
+
+.presentation{
+    width: 95vw;
+}
+video{
+    width: 85%;
+    margin-left:10% ;
+    border: #351c0e 3px solid;
+}
 
 
 
@@ -218,7 +227,13 @@ h2{
     border-radius: 15px;
     
 }
-   
+
+footer P{
+    margin-top:3vh ;
+    text-align: center;
+    color: #351706;
+
+}
 
  /* ***********RESPONSIVE************** */
 
@@ -232,8 +247,12 @@ h2{
          }
          .colPartOne1, .colPartOne2, .colPartOne3{
             margin: 2vw;
+            
         }
-
+        .colPartOne1:hover, .colPartOne2:hover, .colPartOne3:hover{
+            animation:jello-horizontal 1.2s both;
+        }
+        @keyframes jello-horizontal{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}100%{transform:scale3d(1,1,1)}}
      }
     
      
@@ -275,7 +294,7 @@ h2{
           
       }
       .card:hover{
-        animation:wobble-hor-bottom .8s both
+        animation:wobble-hor-bottom 1.2s both
       }
       @keyframes wobble-hor-bottom{0%,100%{transform:translateX(0);transform-origin:50% 50%}15%{transform:translateX(-30px) rotate(-6deg)}30%{transform:translateX(15px) rotate(6deg)}45%{transform:translateX(-15px) rotate(-3.6deg)}60%{transform:translateX(9px) rotate(2.4deg)}75%{transform:translateX(-6px) rotate(-1.2deg)}} 
    }
